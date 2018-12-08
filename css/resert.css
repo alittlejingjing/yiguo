@@ -1,0 +1,9 @@
+body{font-size:12px;font-family:"Helvetica"; font-weight:normal; line-height:1.5;}		
+html,body,h1,h2,h3,p,div,ul,li,span,em,dl,dt,dd{margin:0;padding:0;}
+ul,li{list-style:none;}
+html,body,img{border:0;}
+em{font-style:normal;}			
+h1,h2,h3,h4,strong,em,i{ font-style:normal; font-weight:normal;}
+a,a:hover{text-decoration:none;}
+.clearfix:after{clear:both; content:''; font-size:0; display:block; visibility:hidden; height:0}
+*{margin: 0; padding: 0;}
