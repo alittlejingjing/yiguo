@@ -51,7 +51,7 @@ function changeClass(){
     .siblings("span").removeClass("active")
 //    $slides.children.style.transform="scaleX(1.1) scaleY(1.1)";
 
-   console.log($slides.img);
+//    console.log($slides.img);
    
 
 }
@@ -80,9 +80,9 @@ function toIndex(event){
     changeClass()
 }
 
-var banner_timer = setInterval('$("#right").trigger("click")',3000)
+var banner_timer = setInterval('$("#right").trigger("click")',5000)
     $(".banner").hover(function(){
         clearInterval(banner_timer)
     },function(){
-        banner_timer = setInterval('$("#right").trigger("click")',3000)
+        banner_timer = setInterval('$("#right").trigger("click")',5000)
     })
