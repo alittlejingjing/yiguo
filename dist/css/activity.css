@@ -1,0 +1,103 @@
+.banner {
+  width: 100%; }
+  .banner .title {
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #008842; }
+    .banner .title .xin1 {
+      float: left;
+      width: 180px;
+      height: 38px;
+      line-height: 38px;
+      position: relative;
+      text-align: center;
+      background: #008842;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff; }
+    .banner .title .xin {
+      float: left;
+      width: 115px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 38px; }
+  .banner .pic {
+    width: 100%; }
+    .banner .pic img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+
+.content {
+  width: 100%;
+  background: #f2f2f2; }
+  .content .con-title {
+    width: 1000px;
+    margin: 0 auto; }
+  .content .con-ent {
+    width: 1000px;
+    margin: 0 auto; }
+    .content .con-ent ul {
+      overflow: hidden;
+      zoom: 1;
+      margin-left: -13px; }
+      .content .con-ent ul .product {
+        float: left;
+        position: relative;
+        width: 228px;
+        height: 330px;
+        padding: 6px;
+        margin: 0 0 25px 13px;
+        background: #fff;
+        overflow: hidden;
+        zoom: 1; }
+        .content .con-ent ul .product img {
+          width: 228px;
+          height: 228px; }
+          .content .con-ent ul .product img a {
+            color: #444; }
+        .content .con-ent ul .product .name {
+          height: 40px;
+          margin-top: 10px;
+          line-height: 20px;
+          font-size: 14px;
+          overflow: hidden; }
+          .content .con-ent ul .product .name a {
+            color: #444; }
+        .content .con-ent ul .product .price {
+          margin: 16px 95px 0 0;
+          height: 25px;
+          line-height: 25px;
+          color: #e8340c;
+          font-size: 16px;
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+          .content .con-ent ul .product .price strong {
+            font-size: 21px;
+            font-weight: bold; }
+          .content .con-ent ul .product .price del {
+            font-size: 14px;
+            font-weight: normal;
+            color: #969696;
+            padding: 0 8px; }
+        .content .con-ent ul .product .buy {
+          position: absolute;
+          right: 6px;
+          bottom: 17px;
+          width: 90px;
+          text-align: center; }
+          .content .con-ent ul .product .buy .disabled {
+            cursor: default;
+            background: #969696; }
+        .content .con-ent ul .product .disabled, .content .con-ent ul .product .addCart {
+          display: block;
+          width: 90px;
+          height: 25px;
+          margin: 0 auto;
+          line-height: 25px;
+          color: #fff;
+          background: #e8340c;
+          border-radius: 25px; }

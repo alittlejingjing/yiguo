@@ -11,12 +11,12 @@ $(".phone1").on("mouseleave",hidelist)
 function showlist(event){
     var e = event || window.event;
     var target = e.currentTarget;
-    console.log(target)
+    // console.log(target)
     $(target).children("ul").stop().show()
 }
 function hidelist(){
     var e = event || window.event;
     var target = e.currentTarget;
-    console.log(target)
+    // console.log(target)
     $(target).children("ul").stop().hide()
 }
