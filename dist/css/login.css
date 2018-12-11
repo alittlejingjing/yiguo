@@ -1,0 +1,60 @@
+a {
+  color: #333333; }
+
+.header {
+  border: none;
+  background: #e0e0e0; }
+  .header .wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0 5px 0; }
+    .header .wrap .logo {
+      position: relative;
+      float: left; }
+      .header .wrap .logo a {
+        display: block;
+        width: 195px;
+        height: 50px;
+        background: url("../images/logo.png") no-repeat; }
+      .header .wrap .logo .h-tit {
+        color: #008842;
+        left: 240px;
+        font: 28px/1 Microsoft YaHei;
+        position: absolute;
+        top: 6px;
+        white-space: nowrap; }
+
+.login {
+  margin: 0;
+  border: none;
+  background-color: #ffffff;
+  padding-top: 30px;
+  width: 100%; }
+  .login p {
+    margin-bottom: 20px;
+    font: 12px Arial, "SimSun";
+    color: #878787;
+    position: relative;
+    overflow: hidden; }
+  .login .wrap {
+    width: 1200px;
+    margin: 0 auto; }
+    .login .wrap .fl {
+      float: left; }
+    .login .wrap .fr {
+      padding-right: 105px;
+      float: right; }
+      .login .wrap .fr .login-main {
+        width: 308px;
+        padding: 30px 20px 20px;
+        background-color: #fff;
+        border: 1px solid #e3e6e0; }
+        .login .wrap .fr .login-main p {
+          width: 100%; }
+          .login .wrap .fr .login-main p strong {
+            color: #262626;
+            font: 18px/1 "Microsoft YaHei"; }
+          .login .wrap .fr .login-main p i {
+            position: absolute;
+            right: 0;
+            top: 0; }

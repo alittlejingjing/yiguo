@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/yiguo.ico">
+    <link rel="stylesheet" href="css/resert.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>登录</title>
+</head>
+<body>
+
+<div class="header clearfix">
+    <div class="wrap">
+        <div class="logo">
+            <a href="http://www.yiguo.com" target="_blank"></a>
+            <i class="h-tit">登录</i>
+        </div>
+    </div>
+</div>
+
+<!-- <script type="text/javascript">
+
+    $(function () {
+        $('#Pwd').keydown(function (e) {
+
+            if (e.keyCode == 13) {
+                document.getElementById("btnLogin").click(); //调用登录按钮的登录事件
+            }
+        });
+
+        $("#btnLogin").click(function () {
+            if (Form.Validate($("#UserName").val())) {
+                $("#msg-wrap").addClass("msg-wrap").children("div").addClass("msg-error").html(Form.VC);
+                return false;
+            }
+
+            $('form').submit();
+        });
+
+        $(".gray").click(function () {
+            $("#imgcode").attr("src", "/verifycode" + "?_t=" + new Date().getTime());
+        });
+        
+        $("#p-code-btn").on("click", ".qq,.sina", function () {
+            $("#p-code").show();
+        })
+        $("#p-code").on("click", ".close", function () {
+            $("#p-code").hide();
+        })
+
+    });
+
+</script> -->
+
+<form action="/ub/login.aspx?url=http://www.yiguo.com/" method="post">    
+    <div class="login">
+        <div class="wrap clearfix">
+            <div class="fl">
+                <a href="#" target="_blank">
+                    <img width="666" height="418" src="http://img06.yiguoimg.com/e/others/170505/9288707397067429.jpg">
+                </a>
+            </div>
+            <div class="fr">
+                <p class="right"></p>
+                <div class="login-main">
+                    <p>
+                        <strong>欢迎登录</strong>
+                        <i>还没有账号？
+                            <a class="green" href="#">立即注册</a>
+                        </i>
+                    </p>
+                        <div id="msg-wrap"><div> </div></div>
+                    <p>
+                        <i class="input-phone-icon">&nbsp;</i>
+                        <input class="input input-phone" id="UserName" name="UserName" placeholder="邮箱/账号/已验证手机" type="text" value="">
+                    </p>
+                    <p>
+                        <i class="input-key-icon">&nbsp;</i>
+                        <input class="input input-key" id="Pwd" name="Pwd" placeholder="密码" type="password"></p>
+                    <p>
+                        <input class="input input-key" id="VerifyCode" name="VerifyCode" placeholder="验证码" style="width:100px;float:left;" type="text" value="">
+                        <img src=" " id="imgcode" onclick="this.src=this.src" style="float:left;">
+                        <a href="#" class="gray" style="float:left;margin-top:13px;">换一张</a>
+                    </p>
+                    <p>
+                        <label>
+                            <input data-val="true" data-val-required="自动登录 字段是必需的。" id="UserNameRemeber" name="UserNameRemeber" type="checkbox" value="true">
+                            <input name="UserNameRemeber" type="hidden" value="false"> 自动登录
+                        </label>
+                        <i> 
+                            <a class="gray" href="#">忘记登录密码？</a>   
+                        </i>
+                    </p>
+                    <p>
+                        <a id="btnLogin" href="#" class="btn-green-l">登 &nbsp; 录</a>
+                    </p>
+                    <p>第三方登录</p>
+                    <div id="p-code-btn">
+                        <a href="#" class="qq"><i></i></a>
+                        <a href="#" class="sina"><i></i></a>
+                        <a href="#" class="ay"><i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+        <!------- 页尾开始 ------->
+
+<!-- footer2 start -->
+<div class="footer2">
+    <div class="fot2 clearfix">
+        <dl class="col1">
+            <dt><span class="jing"></span> 新手指南</dt>
+            <dd>
+                <p><a href="#">账户注册</a></p>
+                <p><a href="#">购物流程</a></p>
+                <p><a href="#">订购方式</a></p>
+                <p><a href="#">悠币说明</a></p>
+                <p><a href="#">会员等级</a></p>
+
+            </dd>
+        </dl>
+        <dl class="col2">
+            <dt><span class="jing"></span> 付款方式</dt>
+            <dd>
+                <p><a href="#">支付方式</a>/<a href="#">发票说明</a></p>
+                <p><a href="#">充值说明</a><a href="#">/储值卡说明</a></p>
+                <p><a href="#">优惠代码/礼品卡说明</a></p>
+                <p><a href="#">卡券购买章程</a></p>
+            </dd>
+        </dl>
+        <dl class="col3">
+            <dt><span class="jing"></span> 配送方式</dt>
+            <dd>
+                <p><a href="#">配送运费</a></p>
+                <p><a href="#">配送范围</a></p>
+                <p><a href="#">配送时间</a></p>
+            </dd>
+        </dl>
+        <dl class="col4">
+            <dt><span class="jing"></span> 售后服务</dt>
+            <dd>
+                <p><a href="#">退换货政策</a></p>
+                <p><a href="#">退换货流程</a></p>
+                <p><a href="#">常见问题</a></p>
+                <p><a href="#">极速退款</a></p><p>
+                </p><p><a href="#">投诉与建议</a></p>
+            </dd>
+        </dl>
+        <dl class="col5">
+            <dt><span class="jing"></span> 关于我们</dt>
+            <dd>
+                <p><a href="#">公司介绍</a></p>
+                <p><a href="#">联系我们</a></p>
+                <p><a href="#">业务合作</a></p>
+                <p><a href="#">诚信举报</a></p>
+                <p><a href="#">人才招聘</a></p>
+                <p><a href="#">友情链接</a></p>
+                
+            </dd>
+        </dl>
+        <div class="service">
+            <div class="wjing">客服热线 400-000-7788 企业采购或团购，请转2号键咨询</div>
+            <div class="wjing">周一至周日 9:00-21:00</div>
+        </div>
+        <div class="copyright">
+            <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+            <p> <a href="#" target="_blank" rel="nofollow">沪ICP备09008015号 </a>  Copyright © 2005-2018 <a href="#">上海易果电子商务有限公司</a>版权所有</p>
+            <p class="authentication">
+                <a href="#" target="_blank" rel="nofollow"><img src="images/153685368061665897_121x29.png"></a>
+                <a href="#" target="_blank" rel="nofollow"><img src="images/2517491005058doc.png" height="47"></a>
+                <a href="#" target="_blank"><img src="images/footer_copy.gif" width="47px" height="47px"></a>
+                <a target="_blank" href="#" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px;">
+                    <img src="images/ghs.png" style="float: left;">
+                    <i class="aaa" style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color: #939393;">沪公网安备 31010502000002号</i>
+                </a>
+            </p>
+        </div>
+    </div>            
+</div>
+<!-- footer2 end -->       
+        <!------- 页尾结束 ------->
+</body>
+</html>

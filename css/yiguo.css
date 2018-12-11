@@ -1151,7 +1151,7 @@ nav{
     display: block;
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    /* line-height: 40px; */
     color: #666;
     text-decoration: none;
     cursor: pointer;
@@ -1163,11 +1163,25 @@ nav{
     visibility: visible;
     background: url(../images/floor_guide.png) no-repeat;
 }
-.floor-guide em {
+.floor-guide .em{
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 29px;
+    padding: 6px 8px;
+    top:-2px;
+    background: #008842;
+    color: #fff;
+    display: none;
+}
+.mui-nav a:hover .em{
+    display:block;
+}
+/* .floor-guide .em {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    display: block;
     visibility: hidden;
     overflow: hidden;
     width: 24px;
@@ -1175,12 +1189,13 @@ nav{
     padding: 6px 8px;
     line-height: 14px;
     font-style: normal;
-    color: #fff;
-    transition: background-color .3s ease-out;
-}
-.floor-guide a:hover em{
+    /* color: #fff; */
+    /* z-index: 100; */
+    /* transition: background-color .3s ease-out; */
+/* } */
+/* .floor-guide em{
     display: block;
-}
+} */
 .floor-guide i {
     display: block;
     width: 10px;

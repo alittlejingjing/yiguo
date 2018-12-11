@@ -1,5 +1,6 @@
 .banner {
-  width: 100%; }
+  width: 100%;
+  background: #f2f2f2; }
   .banner .title {
     width: 1200px;
     margin: 0 auto;
@@ -26,9 +27,234 @@
 .cont {
   width: 100%;
   background: #f2f2f2; }
+  .cont a {
+    color: #444444; }
   .cont .wrap {
     width: 1200px;
     margin: 0 auto; }
     .cont .wrap .crumbs {
-      margin: 10px 0;
+      padding: 10px 0;
       margin-left: -10px; }
+      .cont .wrap .crumbs a {
+        margin: 0 10px; }
+  .cont .content {
+    width: 1200px;
+    margin: 0 auto; }
+    .cont .content .pic-preview {
+      position: relative;
+      float: left;
+      width: 500px;
+      height: 600px; }
+      .cont .content .pic-preview .pic-big {
+        width: 500px;
+        height: 500px;
+        overflow: hidden; }
+      .cont .content .pic-preview .pic-thumb {
+        z-index: 1;
+        overflow: hidden;
+        position: relative; }
+        .cont .content .pic-preview .pic-thumb .picList {
+          padding-top: 10px;
+          width: 500px; }
+          .cont .content .pic-preview .pic-thumb .picList ul {
+            zoom: 1;
+            margin-left: -16px; }
+            .cont .content .pic-preview .pic-thumb .picList ul li {
+              float: left;
+              overflow: hidden;
+              height: 85px;
+              width: 85px;
+              border: 1px solid #bcbcbc;
+              margin-left: 16px;
+              cursor: pointer; }
+      .cont .content .pic-preview .icon {
+        position: absolute;
+        left: 10px;
+        top: 10px; }
+    .cont .content .product-info {
+      width: 680px;
+      margin-left: 520px; }
+      .cont .content .product-info .summary-name {
+        margin: 0 85px 20px 0; }
+        .cont .content .product-info .summary-name p {
+          height: 40px;
+          margin-top: 5px;
+          color: #777;
+          font: normal 16px/20px "Microsoft YaHei"; }
+      .cont .content .product-info .summary-price {
+        height: 70px;
+        padding: 10px 20px;
+        background: #fff;
+        position: relative; }
+        .cont .content .product-info .summary-price .pro-price {
+          float: left;
+          height: 70px;
+          width: 423px; }
+          .cont .content .product-info .summary-price .pro-price .tt {
+            width: 60px; }
+          .cont .content .product-info .summary-price .pro-price em {
+            padding: 0 5px;
+            font-size: 18px;
+            color: #ff0000;
+            font-style: normal; }
+          .cont .content .product-info .summary-price .pro-price strong {
+            color: #ff0000;
+            font-size: 22px;
+            font-weight: normal; }
+          .cont .content .product-info .summary-price .pro-price .pro-m1, .cont .content .product-info .summary-price .pro-price .pro-m2 {
+            border-top: 1px solid #e2e2e2;
+            margin-top: 10px;
+            padding-top: 10px; }
+          .cont .content .product-info .summary-price .pro-price .pro-m2 {
+            color: #999999; }
+        .cont .content .product-info .summary-price .pro-tel {
+          position: absolute;
+          right: 160px;
+          top: 5px; }
+          .cont .content .product-info .summary-price .pro-tel p {
+            float: left;
+            margin-top: 53px;
+            margin-right: 10px; }
+            .cont .content .product-info .summary-price .pro-tel p i {
+              display: inline-block;
+              width: 8px;
+              height: 14px;
+              background: url(../images/icon-tel.png) no-repeat center;
+              margin-right: 5px;
+              vertical-align: top; }
+            .cont .content .product-info .summary-price .pro-tel p strong {
+              font-weight: normal;
+              color: #11b57c;
+              margin-left: 10px; }
+          .cont .content .product-info .summary-price .pro-tel .code {
+            float: left;
+            width: 73px;
+            height: 73px;
+            padding: 3px 4px 4px 10px;
+            background: url(../images/bg-code.png) no-repeat; }
+            .cont .content .product-info .summary-price .pro-tel .code img {
+              width: 73px;
+              height: 73px; }
+        .cont .content .product-info .summary-price .pro-review {
+          float: right;
+          text-align: center; }
+          .cont .content .product-info .summary-price .pro-review p {
+            line-height: 22px;
+            color: #999999; }
+            .cont .content .product-info .summary-price .pro-review p b {
+              color: #e8380d;
+              font-size: 18px;
+              font-weight: normal;
+              vertical-align: middle; }
+    .cont .content .summary-other {
+      margin-top: 20px; }
+      .cont .content .summary-other .dt {
+        float: left;
+        width: 40px;
+        padding: 0 10px; }
+      .cont .content .summary-other .left {
+        float: left;
+        width: 529px;
+        padding-right: 20px;
+        border-right: 1px solid #d9d9d9; }
+        .cont .content .summary-other .left .choose {
+          margin-bottom: 20px; }
+          .cont .content .summary-other .left .choose .dt {
+            line-height: 52px; }
+          .cont .content .summary-other .left .choose .dd {
+            float: left;
+            width: 468px; }
+          .cont .content .summary-other .left .choose li {
+            float: left;
+            position: relative;
+            margin: 5px 10px 5px 0; }
+            .cont .content .summary-other .left .choose li a {
+              float: left;
+              width: auto;
+              background-color: #fff;
+              white-space: nowrap;
+              text-align: center;
+              border: 1px solid #e2e2e2;
+              border-bottom: none;
+              text-decoration: none; }
+              .cont .content .summary-other .left .choose li a .span {
+                display: block;
+                padding: 5px 12px 5px 9px;
+                border-bottom: 1px solid #e2e2e2;
+                border-color: #008842; }
+        .cont .content .summary-other .left .pro-service {
+          padding-left: 10px;
+          color: #999;
+          margin-bottom: 20px; }
+          .cont .content .summary-other .left .pro-service b {
+            color: #008842; }
+        .cont .content .summary-other .left .pro-amount {
+          margin-bottom: 20px; }
+          .cont .content .summary-other .left .pro-amount .spinner {
+            width: 76px;
+            position: relative;
+            overflow: hidden;
+            float: left; }
+            .cont .content .summary-other .left .pro-amount .spinner .decrease {
+              top: 21px;
+              right: 18px;
+              border-top: none; }
+            .cont .content .summary-other .left .pro-amount .spinner button {
+              display: block;
+              width: 18px;
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+              float: right;
+              position: relative;
+              border: 1px solid #e2e2e2;
+              background-color: white;
+              cursor: pointer; }
+            .cont .content .summary-other .left .pro-amount .spinner input {
+              width: 39px;
+              height: 39px;
+              line-height: 41px;
+              font-size: 16px;
+              text-align: center;
+              border: none;
+              border: 1px solid #e2e2e2;
+              border-right: none; }
+            .cont .content .summary-other .left .pro-amount .spinner .increase {
+              border-bottom: 1px solid #e2e2e2;
+              height: 21px; }
+          .cont .content .summary-other .left .pro-amount .addcart {
+            float: left;
+            width: 187px;
+            height: 43px;
+            margin-left: 10px; }
+            .cont .content .summary-other .left .pro-amount .addcart a {
+              display: block;
+              width: 187px;
+              height: 25px;
+              padding: 9px 0;
+              text-align: center;
+              font: normal 18px/25px "Microsoft YaHei";
+              color: #fff;
+              background: #008842;
+              border-radius: 3px; }
+            .cont .content .summary-other .left .pro-amount .addcart i {
+              width: 28px;
+              height: 25px;
+              margin-right: 10px;
+              vertical-align: bottom;
+              background: url(../images/product.png) no-repeat -47px 0; }
+      .cont .content .summary-other .right {
+        width: 120px;
+        float: right;
+        padding-left: 10px;
+        color: #777; }
+        .cont .content .summary-other .right table {
+          border-collapse: collapse;
+          border-spacing: 0; }
+          .cont .content .summary-other .right table th {
+            padding: 5px 0;
+            width: 65px;
+            font-weight: normal;
+            text-align: left; }
+          .cont .content .summary-other .right table td {
+            padding-left: 5px; }
