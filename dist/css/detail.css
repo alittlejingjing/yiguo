@@ -47,8 +47,45 @@
       height: 600px; }
       .cont .content .pic-preview .pic-big {
         width: 500px;
+        height: 500px; }
+        .cont .content .pic-preview .pic-big #frame {
+          width: 100px;
+          height: 100px;
+          box-shadow: 0 0 5px #000;
+          border-radius: 5px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          display: none;
+          background-size: 500px 500px;
+          background-repeat: no-repeat; }
+        .cont .content .pic-preview .pic-big #film {
+          width: 500px;
+          height: 500px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 9;
+          cursor: none; }
+      .cont .content .pic-preview #big {
+        width: 500px;
         height: 500px;
-        overflow: hidden; }
+        overflow: hidden;
+        box-shadow: 0 0 5px #000;
+        float: left;
+        position: relative;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 500px;
+        z-index: 10; }
+        .cont .content .pic-preview #big img {
+          width: 2500px;
+          height: 2500px;
+          position: absolute;
+          left: 0;
+          top: 0; }
       .cont .content .pic-preview .pic-thumb {
         z-index: 1;
         overflow: hidden;

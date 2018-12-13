@@ -29,7 +29,8 @@ a {
   border: none;
   background-color: #ffffff;
   padding-top: 30px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 100px; }
   .login p {
     margin-bottom: 20px;
     font: 12px Arial, "SimSun";
@@ -58,3 +59,53 @@ a {
             position: absolute;
             right: 0;
             top: 0; }
+            .login .wrap .fr .login-main p i .green {
+              color: #008842;
+              text-decoration: underline; }
+          .login .wrap .fr .login-main p .input-phone-icon, .login .wrap .fr .login-main p .input-key-icon {
+            position: absolute;
+            left: 1px;
+            top: 1px !important;
+            width: 40px;
+            height: 38px;
+            background: url(../images/bg_input.png) no-repeat; }
+          .login .wrap .fr .login-main p .input-phone-icon {
+            background-position: 0 -120px; }
+          .login .wrap .fr .login-main p .input-key-icon {
+            background-position: 0 -180px; }
+          .login .wrap .fr .login-main p input[type=checkbox] {
+            margin-right: 9px;
+            height: 14px;
+            width: 14px;
+            vertical-align: -1px; }
+          .login .wrap .fr .login-main p .btn-green-l {
+            background: #008842;
+            width: 306px;
+            display: inline-block;
+            height: 50px;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            line-height: 50px; }
+        .login .wrap .fr .login-main #p-code-btn i {
+          background: url("../images/bg_login.png") no-repeat;
+          display: inline-block;
+          width: 88px;
+          height: 20px;
+          margin-right: 20px;
+          vertical-align: middle; }
+        .login .wrap .fr .login-main #p-code-btn .qq i {
+          background-position: -60px -200px; }
+        .login .wrap .fr .login-main #p-code-btn .sina i {
+          background-position: -160px -200px; }
+        .login .wrap .fr .login-main #p-code-btn .ay i {
+          background-position: -260px -200px;
+          width: 57px;
+          margin-right: 0; }
+  .login .input {
+    border: 1px solid #c1c1c1;
+    background: url("../images/bg_input.png") no-repeat;
+    height: 38px;
+    vertical-align: middle;
+    width: 254px;
+    padding-left: 50px; }

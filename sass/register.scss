@@ -1,0 +1,117 @@
+a{
+    color: #333333;
+}
+.header{
+    border:none;
+    background: #e0e0e0;
+    .wrap{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 15px 0 5px 0;
+        .logo{
+            position: relative;
+            float: left;
+            a{
+                display: block;
+                width: 195px;
+                height: 50px;
+                background: url("../images/logo.png") no-repeat;
+            }
+            .h-tit{
+                color: #008842;
+                left: 240px;
+                font: 28px/1 Microsoft YaHei;
+                position: absolute;
+                top: 6px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+.register{
+    padding-top: 54px;
+    width: 100%;
+    .wrap{
+        width: 1200px;
+        margin: 0 auto;
+        .tabbable{
+            position: relative;
+            width: 100%;
+            margin: 10px auto 0;
+            .right{
+                position: absolute;
+                top: -27px;
+                right: 0;
+                font: 14px/1 "Microsoft YaHei";
+                .orange{
+                    margin-right: 36px;
+                    color: #ef760a;
+                    text-decoration: underline;
+                }
+            }
+            .tab-content{
+                .tab-pane{
+                    border: 1px solid #c4dfb1;
+                    background-color: #fff;
+                    padding: 40px 0 50px;
+                    .fl{
+                        float: left;
+                        p{
+                            margin-bottom: 29px;
+                            font: 14px Arial,"Microsoft YaHei";
+                            line-height: 38px;
+                            .field-name{
+                                display: inline-block;
+                                width: 220px;
+                                text-align: right;
+                                padding-right: 20px;
+                            }
+                            input{
+                                margin-right: 20px;
+                                width: 147px;
+                                border: 1px solid #c1c1c1;
+                                background-color: #fff;
+                                height: 38px;
+                                vertical-align: middle;
+                                padding-left: 14px;
+                                font: 14px/38px "Microsoft YaHei";
+                            }
+                            input[type=checkbox] {
+                                margin-right: 9px;
+                                height: 14px;
+                                width: 14px;
+                                vertical-align: -1px;
+                            }
+                            .btn-green-l{
+                                background: #008842;
+                                width: 306px;
+                                display: inline-block;
+                                height: 50px;
+                                text-align: center;
+                                color: #fff;
+                                font: 18px/50px "Microsoft YaHei";
+                            }
+                        }
+                    }
+                    .fr{
+                        float: right;
+                        position: relative;
+                        height: 340px;
+                        width: 330px;
+                        text-align: center;
+                        padding-top: 50px;
+                        font: 14px/56px "Microsoft YaHei";
+                        .rimg {
+                            position: absolute;
+                            left: -140px;
+                            top: 70px;
+                        }
+                    }
+                }
+                .active{
+                    display: block;
+                }
+            }
+        }
+    }
+}

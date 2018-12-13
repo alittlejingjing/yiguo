@@ -102,47 +102,62 @@
         <div class="content clearfix">
             <div class="product-intro clearfix j_product">
                 <!--预览图-->
-                <div class="pic-preview">
+                <!-- 放大镜  start -->
+                <div class="pic-preview clearfix">
+                    <!-- 小图 放大之前的 start -->
                     <div class="pic-big">
-                        <img class="j_product_img" width="500" height="500" src="http://img11.yiguoimg.com/d/items/2017/170825/9288712031576857_500.jpg" style="display:  block;">
-                        <img class="j_product_img" width="500" height="500" src="http://img11.yiguoimg.com/d/items/2017/170825/9288712033772313_500.jpg" style="display: none;">
-                        <img class="j_product_img" width="500" height="500" src="http://img13.yiguoimg.com/d/items/2017/170825/9288712033739545_500.jpg" style="display: none;">
+                        <!-- 一个膜 -->
+                        <div id="film"></div>
+                        <!-- 一个框 -->
+                        <div id="frame"></div>
+                        <img id="smallImg" class="j_product_img" width="500" height="500" src="" style="display:  block;">
+                        <!-- <img id="smallImg" class="j_product_img" width="500" height="500" src="http://img11.yiguoimg.com/d/items/2017/170825/9288712033772313_500.jpg" style="display: none;">
+                        <img id="smallImg" class="j_product_img" width="500" height="500" src="http://img13.yiguoimg.com/d/items/2017/170825/9288712033739545_500.jpg" style="display: none;"> -->
                     </div>
+                    <!-- 小图 放大之前的 end -->
+                    <!-- 大图 放大之后的 start -->
+                    <div id="big">
+                        <img  id="bigImg" src="" alt="">
+                        <!-- <img  src="http://img11.yiguoimg.com/d/items/2017/170825/9288712033772313_500.jpg" style="display: none;">
+                        <img  src="http://img13.yiguoimg.com/d/items/2017/170825/9288712033739545_500.jpg" style="display: none;"> -->
+                    </div>
+                    <!-- 大图 放大之后的 end -->
                     <div class="pic-thumb">
                         <div class="picList">
                             <ul>
-                                <li><img width="85" height="85" src="http://img11.yiguoimg.com/d/items/2017/170825/9288712031576857_500.jpg"></li>
-                                <li><img width="85" height="85" src="http://img11.yiguoimg.com/d/items/2017/170825/9288712033772313_500.jpg"></li>
-                                <li><img width="85" height="85" src="http://img13.yiguoimg.com/d/items/2017/170825/9288712033739545_500.jpg"></li>
+                                <li><img id="good1" width="85" height="85" src="http://img11.yiguoimg.com/d/items/2017/170825/9288712031576857_500.jpg"></li>
+                                <li><img id="good2" width="85" height="85" src="http://img11.yiguoimg.com/d/items/2017/170825/9288712033772313_500.jpg"></li>
+                                <li><img id="good3" width="85" height="85" src="http://img13.yiguoimg.com/d/items/2017/170825/9288712033739545_500.jpg"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="icon"><img src="http://static01.yiguo.com/www/images/ICON06.png" width="46" height="46"></div>
                 </div>
+                <!-- 放大镜 end -->
                 <div class="product-info">
                     <div class="summary-name">
-                        <h1>星巴克红茶星冰乐奶茶饮料281ml</h1>
+                        <h1></h1>
                         <p>融入进口全脂乳粉</p>
                         <input type="hidden" name="CommodityId" id="CommodityId" value="c0d2b546-b439-44c6-8fdd-76889240d443">
                     </div>
     
                     <div class="summary-price clearfix">
+                        
                         <div class="pro-price">
-                            <div>
+                            <div id="ttt-price">
                                 <i class="tt">价格：</i>
-                                <i><em>¥</em><strong>15.90</strong></i>
+                                <i><strong id="ttt-price"></strong></i>
                             </div>
-                                <div class="pro-m2">
-                                    更多商品优惠，尽在易果生鲜APP
-                                </div>
-    
-    
+                            <div class="pro-m2">
+                                更多商品优惠，尽在易果生鲜APP
+                            </div>
                         </div>
                         <div class="pro-tel">
                             <p><i></i>手机下单购买<strong>立即扫码</strong></p><div class="code">
                                 <img id="qrcodeUrl" width="114" height="114" display:="" block="" src="data:img/png;base64,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">
                             </div>
                         </div>
+
                         <div class="pro-review">
                             <p>总体满意度</p>
                             <p><b>5.0</b> 分</p>
@@ -204,5 +219,7 @@
     <script src="./js/jquery-3.3.1.js"></script>
     <script src="./js/erjicaidan.js"></script>
     <script src="./js/xiding.js"></script>
+    <script src="./js/fangdajing.js"></script>
+    <script src="js/detail.js"></script>
 </body>
 </html>

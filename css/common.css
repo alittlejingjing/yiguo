@@ -249,6 +249,36 @@ nav{
     font-size: 20px;
     color: #008842;
 }
+.nav .gou .gou_list{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -231px;
+    background-image: url(../images/none-bg-w190.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid #008842;
+    width: 400px;
+}
+.nav .gou .gou_list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav .gou .gou_list li img{
+    width: 40px;
+}
+.nav .gou .gou_list li .title{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nav .gou .gou_list li .price{
+    color: red;
+    font-weight: bold;
+}
 /* nav end */
 
 

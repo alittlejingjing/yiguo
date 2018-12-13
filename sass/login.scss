@@ -34,6 +34,7 @@ a{
     background-color: #ffffff;
     padding-top: 30px;
     width: 100%;
+    margin-bottom: 100px;
     p{
         margin-bottom: 20px;
         font: 12px Arial, "SimSun";
@@ -65,9 +66,78 @@ a{
                         position: absolute;
                         right: 0;
                         top: 0;
+                        .green{
+                            color: #008842;
+                            text-decoration: underline;
+                        }
+                    }
+                    .input-phone-icon,.input-key-icon{
+                        position: absolute;
+                        left: 1px;
+                        top: 1px !important;
+                        width: 40px;
+                        height: 38px;
+                        background: url(../images/bg_input.png) no-repeat;
+                    }
+                    .input-phone-icon{
+                        background-position: 0 -120px;
+                    }
+                    .input-key-icon{
+                        background-position: 0 -180px;
+                    }
+                    input[type=checkbox]{
+                        margin-right: 9px;
+                        height: 14px;
+                        width: 14px;
+                        vertical-align: -1px;
+                    }
+                    .btn-green-l{
+                        background: #008842;
+                        width: 306px;
+                        display: inline-block;
+                        height: 50px;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 18px;
+                        line-height: 50px;
+                    }
+                }
+                #p-code-btn{
+                    i{
+                        background: url("../images/bg_login.png") no-repeat;
+                        display: inline-block;
+                        width: 88px;
+                        height: 20px;
+                        margin-right: 20px;
+                        vertical-align: middle;
+                    }
+                    .qq{
+                        i{
+                            background-position: -60px -200px;
+                        }
+                    }
+                    .sina{
+                        i{
+                            background-position: -160px -200px;
+                        }
+                    }
+                    .ay{
+                        i{
+                            background-position: -260px -200px;
+                            width: 57px;
+                            margin-right: 0;
+                        }
                     }
                 }
             }
         }
+    }
+    .input{
+        border: 1px solid #c1c1c1;
+        background: url("../images/bg_input.png") no-repeat;
+        height: 38px;
+        vertical-align: middle;
+        width: 254px;
+        padding-left: 50px;
     }
 }
