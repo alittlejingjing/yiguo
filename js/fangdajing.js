@@ -55,6 +55,8 @@ var oSmall = document.querySelector(".pic-big")
 
 		oFrame.style.backgroundPosition = `${-nLeft}px ${-nTop}px`
     }	
-    
+	
+	
+
 
 

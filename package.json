@@ -25,7 +25,8 @@
     "gulp-connect": "^5.6.1",
     "gulp-connect-proxy": "^0.3.1",
     "gulp-sass-china": "^3.1.0",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "http-proxy-middleware": "^0.19.1"
   },
   "dependencies": {
     "amdefine": "^1.0.1",

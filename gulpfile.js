@@ -5,6 +5,7 @@
 const gulp = require("gulp");
 // gulp 服务器插件;
 const connect = require("gulp-connect");
+const proxy = require("http-proxy-middleware")
 // gulp 合并插件;
  var concat = require('gulp-concat');
 // // gulp 压缩插件;
@@ -23,11 +24,15 @@ gulp.task('connect', function() {
         root:"dist/",
         livereload:true,
         // 中间件;
-        middleware:function(connect , opt){
-            var Proxy = require('gulp-connect-proxy');
-            opt.route = '/proxy';
-            var proxy = new Proxy(opt);
-            return [proxy];
+        middleware:function(){
+            return[
+                proxy("/api",{
+                    target:"http://localhost:3000",
+                    pathRewrite:{
+                        '^/api':'/',
+                    }
+                })
+            ]
         }
     })
 });

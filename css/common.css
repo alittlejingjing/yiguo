@@ -259,6 +259,7 @@ nav{
     background-size: 100% 100%;
     border: 1px solid #008842;
     width: 400px;
+    z-index:80;
 }
 .nav .gou .gou_list li{
     display: flex;

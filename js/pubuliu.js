@@ -283,7 +283,8 @@ function renderCart(){
                         <img src="${cart_json[i].show.img}"> 
                         <i class="title">${cart_json[i].title}</i>
                         <i class="price">${cart_json[i].price} </i> 
-                        <i> * ${cart_json[i].count}</i>
+                        <i>*</i>
+                        <i>${cart_json[i].count}</i>
                         <i id="clear">删除</i>
                     </li>`
     }
