@@ -1,47 +1,48 @@
-// var aSpan = document.querySelectorAll("input");
-//         username.onblur = function(){
-//             var reg =/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}$/;
-//             if(reg.test(username.value) != true){
-//                 aSpan[0].style.color = "red";
-//             }else{
-//                 aSpan[0].style.color = "green";
-//             }
-//         }
-//         mobile.onblur = function(){
-//             var reg = /^(156|158|188)[0-9]{8}$/
-//             if(reg.test(mobile.value)){
-//                 aSpan[1].style.color = "green";
-//             }else{
-//                 aSpan[1].style.color = "red";
-//                 aSpan[1].innerHTML = "请填写正确的手机号码"
-//             }
-//         }
-//         email.onblur = function(){
-//             var reg = /^[1-9a-z][0-9a-z]{5,19}@(126|163|qq)(.com|.cn)$/;
-//             if(reg.test(email.value)){
-//                 aSpan[2].style.color = "green";
-//             }else{
-//                 aSpan[2].style.color = "red";
-//                 aSpan[2].innerHTML = "请填写正确的邮箱地址"
-//             } m 
-//         }
-//         password.onblur = function(){
-//             var reg = /[a-zA-Z\d_]{6,18}/;
-//             if(reg.test(password.value)){
-//                 aSpan[3].style.color = "green";
-//             }else{
-//                 aSpan[3].style.color = "red";
-//                 aSpan[3].innerHTML = "密码不能为纯字母"
-//             }
-//         }
-//         passWordAgain.onblur = function(){
-//             if(passWordAgain.value == password.value){
-//                 aSpan[4].style.color = "green";
-//             }else{
-//                 aSpan[4].style.color = "red";
-//                 aSpan[4].innerHTML = "两次密码输入不一致"
-//             }
-//         }
+var aSpan = document.querySelectorAll("input");
+// console.log(aSpan)
+        username.onblur = function(){
+            var reg =/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}$/;
+            if(reg.test(username.value) != true){
+                aSpan[1].style.color = "red";
+            }else{
+                aSpan[1].style.color = "green";
+            }
+        }
+        mobile.onblur = function(){
+            var reg = /^(156|158|188)[0-9]{8}$/
+            if(reg.test(mobile.value)){
+                aSpan[0].style.color = "green";
+            }else{
+                aSpan[0].style.color = "red";
+                aSpan[0].innerHTML = "请填写正确的手机号码"
+            }
+        }
+        email.onblur = function(){
+            var reg = /^[1-9a-z][0-9a-z]{5,19}@(126|163|qq)(.com|.cn)$/;
+            if(reg.test(email.value)){
+                aSpan[4].style.color = "green";
+            }else{
+                aSpan[4].style.color = "red";
+                aSpan[4].innerHTML = "请填写正确的邮箱地址"
+            }
+        }
+        password.onblur = function(){
+            var reg = /[a-zA-Z\d_]{6,18}/;
+            if(reg.test(password.value)){
+                aSpan[2].style.color = "green";
+            }else{
+                aSpan[2].style.color = "red";
+                aSpan[2].innerHTML = "密码不能为纯字母"
+            }
+        }
+        passWordAgain.onblur = function(){
+            if(passWordAgain.value == password.value){
+                aSpan[3].style.color = "green";
+            }else{
+                aSpan[3].style.color = "red";
+                aSpan[3].innerHTML = "两次密码输入不一致"
+            }
+        }
 
         // var oInp1=document.getElementById("username");
         // var oInp2=document.getElementById("mobile");
@@ -79,8 +80,14 @@
                 data:`username=${username}&password=${password}`
             })
             .then((res)=>{
-                console.log(res)
+                if(res.statu === "success"){
+                    location.href = "http://localhost:8888/login.html"
+                    console.log(res)
+                }else{
+                    alert("用户名重复")
+                }
             })
+            
         })
 
 

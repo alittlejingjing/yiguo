@@ -1,15 +1,3 @@
-// $(".wrap1").append("<ul>"+html+"</ul>")
-// $("li").addClass(".p_item")
-// $(".p_item").on("mouseenter",showBuy)
-// $(".p_item").on("mouseleave",hideBuy)
-
-// function showBuy(){
-//     $(".p-buy").show()
-// }
-// function hideBuy(){
-//     $(".p-buy").hide()
-// }
-
 
 //选中元素
 var container = _(".wrap1");
@@ -62,6 +50,7 @@ function randerPage(json){
 function eleSort(eles){
     var heightArray = [];
     // console.log(eles)
+    
     eles = _slice(eles)
     // console.log(eles)
     eles.forEach(function(ele,index){
@@ -176,7 +165,7 @@ $(".wrap1").on("click",".p_img",handledetailClick);
 function handleCarClick(event){
     var e = event || window.event;
     var target = e.target || e.srcElement;
-    console.log(target)
+    // console.log(target)
     var iid = $(target).attr("data-iid");
     var nowMsg = findJson(iid)[0];
     addCar(nowMsg,iid);
@@ -212,10 +201,10 @@ function addCar(nowMsg , iid){
     
     // 3. 还是覆盖是为什么，因为如果已经有了数据,那么这时候我们会覆盖之前的数据;
     // 先把结构取出来 查看一下是否存在，如果存在，我就向里面拼接,如果不存在我再建立结构;
-    console.log(sNowMsg)
+    // console.log(sNowMsg)
     if(!localStorage.cart){
           localStorage.setItem("cart",`[${sNowMsg}]`);
-          console.log(sNowMsg)
+        //   console.log(sNowMsg)
           return false;
     }
     // 如果存在对结构进行插入;
@@ -241,10 +230,9 @@ function hasIid(aMsg,iid){
     for(var i = 0 ; i < aMsg.length ; i ++){
           if(aMsg[i].iid === iid){
                 aMsg[i].count ++;
-                console.log(aMsg[i].count)
-                (aMsg[i].count).append($(".shu"))
-                return true;
-                
+                // console.log(aMsg[i].count)
+                // (aMsg[i].count).append($(".shu"))
+                return true;  
           }
     }
     return false;
